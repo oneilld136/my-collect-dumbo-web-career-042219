@@ -1,8 +1,9 @@
-def my_collect(collection)
-  counter = 0
-  while counter < array.length
-    yield(array[counter])
-    counter = counter +1
+def my_collect(array)
+  i = 0
+  name_collection = []
+  while i < array.length
+    name_collection.push yield(array[i])
+    i += 1
   end
-  array
+  name_collection
 end
